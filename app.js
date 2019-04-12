@@ -12,7 +12,7 @@ var coinRouter = require('./routes/coin');
 
 // Conection 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://00162317:taller2@ds239206.mlab.com:39206/coin',{ useNewUrlParser: true })
+mongoose.connect('mongodb://00162317:taller2@ds239206.mlab.com:39206/coins',{ useNewUrlParser: true })
   .then(() => console.log('Mogoose is Conected'))
   .catch((err) => {
     console.log(err);
