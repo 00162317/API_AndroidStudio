@@ -32,7 +32,7 @@ CoinController.get = function (req, res) {
 
 CoinController.getByCountry = function (req, res) {
     // Buscar por id, el psot
-    coinModel.findOne({country: req.params.country}, function(err, coin){
+    coinModel.find({country: req.params.country}, function(err, coin){
         if (err) {
             res.status(500);
             res.json({code:500, err});
